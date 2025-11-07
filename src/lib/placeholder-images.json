@@ -1,0 +1,53 @@
+{
+  "placeholderImages": [
+    {
+      "id": "avatar",
+      "description": "A portrait of the developer",
+      "imageUrl": "https://picsum.photos/seed/avatar/200/200",
+      "imageHint": "profile person"
+    },
+    {
+      "id": "project-1",
+      "description": "A screenshot of the first project",
+      "imageUrl": "https://picsum.photos/seed/proj1/600/400",
+      "imageHint": "web application"
+    },
+    {
+      "id": "project-2",
+      "description": "A screenshot of the second project",
+      "imageUrl": "https://picsum.photos/seed/proj2/600/400",
+      "imageHint": "dashboard interface"
+    },
+    {
+      "id": "project-3",
+      "description": "A screenshot of the third project",
+      "imageUrl": "https://picsum.photos/seed/proj3/600/400",
+      "imageHint": "mobile app"
+    },
+    {
+      "id": "project-4",
+      "description": "A screenshot of the fourth project",
+      "imageUrl": "https://picsum.photos/seed/proj4/600/400",
+      "imageHint": "ecommerce website"
+    },
+    {
+      "id": "video-keyframes",
+      "description": "Illustration of the video to summary pipeline",
+      "imageUrl": "/img/video-keyframes.png",
+      "imageHint": "video to summary"
+    },
+    {
+      "id": "concert-with-friends",
+      "description": "Web page loaded with concerts",
+      "imageUrl": "/img/concert-with-friends.png",
+      "imageHint": "concert with friends"
+    },
+    {
+      "id": "av-conv",
+      "description": "Architecture of AV-CONV pipeline",
+      "imageUrl": "/img/av-conv.png",
+      "imageHint": "av-conv"
+    }
+
+  ]
+}
