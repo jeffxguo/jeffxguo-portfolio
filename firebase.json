@@ -7,7 +7,13 @@
       "**/node_modules/**"
     ],
     "frameworksBackend": {
-      "region": "us-central1"
+      "region": "us-central1",
+      "secretEnvironmentVariables": [
+        {
+          "key": "RESEND_API_KEY",
+          "secret": "RESEND_API_KEY"
+        }
+      ]
     }
   }
 }
