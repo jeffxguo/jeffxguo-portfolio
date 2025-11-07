@@ -8,11 +8,8 @@
     ],
     "frameworksBackend": {
       "region": "us-central1",
-      "secretEnvironmentVariables": [
-        {
-          "key": "RESEND_API_KEY",
-          "secret": "RESEND_API_KEY"
-        }
+      "secrets": [
+        "RESEND_API_KEY"
       ]
     }
   }
