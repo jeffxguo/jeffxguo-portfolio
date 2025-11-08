@@ -15,7 +15,7 @@ export function AboutSection() {
             I'm a Full-Stack and AI Developer with a Master's of Computer Science from the University of Southern California. I have a strong background building unique AI solutions involving ML and LLMs, while
             also creating responsive, scalable, and user-friendly web applications. I'm constantly evolving and always looking for creative ways to develop and hone my skillset.
           </p>
-          <div className="mt-8 flex gap-4">
+          <div className="mt-8 flex flex-wrap gap-4">
             <Button asChild>
               <Link href="#contact">Contact Me</Link>
             </Button>
