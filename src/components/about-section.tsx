@@ -39,6 +39,7 @@ export function AboutSection() {
               alt="Avatar"
               width={250}
               height={250}
+              unoptimized
               className="rounded-full object-cover aspect-square shadow-lg"
             />
         </div>
