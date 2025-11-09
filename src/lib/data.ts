@@ -25,7 +25,7 @@ const findImage = (id: string): ImagePlaceholder => {
 export const projects: Project[] = [
   {
     title: 'Video Keyframes to Summary Neural Network',
-    description: 'A pipeline to automatically generate video summaries by extracting important keyframes, captioning them, then stitching them together',
+    description: 'A Natural Language Processing pipeline to automatically generate video summaries by extracting important keyframes, captioning them, then stitching them together',
     technologies: ['Python', 'Pytorch'],
     image: findImage('video-keyframes'),
     links: {
