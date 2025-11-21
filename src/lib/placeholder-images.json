@@ -25,10 +25,10 @@
       "imageHint": "mobile app"
     },
     {
-      "id": "project-4",
-      "description": "A screenshot of the fourth project",
-      "imageUrl": "https://picsum.photos/seed/proj4/600/400",
-      "imageHint": "ecommerce website"
+      "id": "url-shortener",
+      "description": "A screenshot of URL Shortener project",
+      "imageUrl": "/img/url-shortener.png",
+      "imageHint": "url shortener"
     },
     {
       "id": "video-keyframes",

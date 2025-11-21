@@ -1,7 +1,7 @@
 import type { ImagePlaceholder } from './placeholder-images';
 import { PlaceHolderImages } from './placeholder-images';
 
-export type Technology = 'Python' | 'Docker' | 'React' | 'Next.js' | 'Node.js' | 'TypeScript' | 'Tailwind CSS' | 'Firebase' | 'Pytorch' | 'Scikit-learn' | 'MongoDB' | 'Mongoose';
+export type Technology = 'Python' | 'Docker' | 'React' | 'Next.js' | 'Node.js' | 'TypeScript' | 'Tailwind CSS' | 'Firebase' | 'Pytorch' | 'Scikit-learn' | 'MongoDB' | 'Mongoose' | 'PostgreSQL' | 'AWS';
 
 export type Project = {
   title: string;
@@ -49,4 +49,13 @@ export const projects: Project[] = [
     links: {
     },
   },
+  {
+    title: 'URL Shortener',
+    description: 'Shortens long URLs and stores the shortened versions through AWS.',
+    technologies: ['React', 'Node.js', 'AWS', 'Docker', 'PostgreSQL'],
+    image: findImage('url-shortener'),
+    links: {
+      github: 'https://github.com/jeffxguo/url-shortener',
+    }
+  }
 ];
