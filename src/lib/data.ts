@@ -1,7 +1,8 @@
 import type { ImagePlaceholder } from './placeholder-images';
+import { Technology } from '@/components/icons';
 import { PlaceHolderImages } from './placeholder-images';
 
-export type Technology = 'Python' | 'Docker' | 'React' | 'Next.js' | 'Node.js' | 'TypeScript' | 'Tailwind CSS' | 'Firebase' | 'Pytorch' | 'Scikit-learn' | 'MongoDB' | 'Mongoose' | 'PostgreSQL' | 'AWS';
+
 
 export type Project = {
   title: string;
