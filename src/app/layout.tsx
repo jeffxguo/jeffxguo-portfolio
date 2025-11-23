@@ -9,7 +9,29 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 
 export const metadata: Metadata = {
   title: 'Jeffrey Guo',
-  description: 'A modern portfolio to showcase development projects.',
+  description: 'Full-Stack & AI Developer showcasing projects in AI, Machine Learning, and Web Development.',
+  openGraph: {
+    title: 'Jeffrey Guo',
+    description: 'Full-Stack & AI Developer showcasing projects in AI, Machine Learning, and Web Development.',
+    url: 'https://jeffreyguo.com',
+    siteName: 'Jeffrey Guo Portfolio',
+    images: [
+      {
+        url: '/opengraph-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Jeffrey Guo - Full-Stack & AI Developer',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Jeffrey Guo',
+    description: 'Full-Stack & AI Developer showcasing projects in AI, Machine Learning, and Web Development.',
+    images: ['/opengraph-image.png'],
+  },
   icons: {
     icon: '/avatar.png',
   },
