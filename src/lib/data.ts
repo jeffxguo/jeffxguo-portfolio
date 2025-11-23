@@ -60,3 +60,27 @@ export const projects: Project[] = [
     }
   }
 ];
+
+export type SkillCategory = {
+  title: string;
+  skills: string[];
+};
+
+export const skillsData: SkillCategory[] = [
+  {
+    title: "Languages",
+    skills: ["Python", "Java", "C++", "JavaScript", "TypeScript", "SQL", "HTML", "CSS"],
+  },
+  {
+    title: "Frameworks & Libraries",
+    skills: ["React", "Next.js", "Node.js", "Express", "Tailwind CSS", "PyTorch", "Scikit-learn", "TensorFlow", "pandas", "NumPy", "Matplotlib", "Mongoose"],
+  },
+  {
+    title: "Tools & Platforms",
+    skills: ["Git", "Docker", "AWS", "Firebase", "PostgreSQL", "MongoDB"],
+  },
+  {
+    title: "Concepts",
+    skills: ["Responsive Design", "RESTful APIs", "Full-Stack Development", "Machine Learning", "Neural Networks", "Computer Vision", "Natural Language Processing"],
+  },
+];

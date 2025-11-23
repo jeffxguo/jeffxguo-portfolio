@@ -60,7 +60,7 @@ export function ContactSection() {
   };
 
   return (
-    <section id="contact" className="container py-24 sm:py-32">
+    <section id="contact" className="w-full bg-muted/40 py-24 sm:py-32">
       <Card>
         <CardHeader>
           <CardTitle className="text-4xl font-bold text-center">Contact Me</CardTitle>
