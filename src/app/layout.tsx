@@ -8,12 +8,13 @@ import { ThemeProvider } from "@/components/theme-provider"
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://jeffxguo.me'),
   title: 'Jeffrey Guo',
   description: 'Full-Stack & AI Developer showcasing projects in AI, Machine Learning, and Web Development.',
   openGraph: {
     title: 'Jeffrey Guo',
     description: 'Full-Stack & AI Developer showcasing projects in AI, Machine Learning, and Web Development.',
-    url: 'https://jeffreyguo.com',
+    url: 'https://jeffxguo.me',
     siteName: 'Jeffrey Guo Portfolio',
     images: [
       {

@@ -2,12 +2,13 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from './ui/button';
 import { FileText } from 'lucide-react';
+import { FadeIn } from './fade-in';
 
 export function AboutSection() {
   return (
     <section id="about" className="container py-24 sm:py-32">
       <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-3">
-        <div className="lg:col-span-2">
+        <FadeIn className="lg:col-span-2">
           <p className="text-lg text-primary mb-2">Hi, I'm <span className='font-bold text-xl'>Jeffrey Guo</span></p>
           <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
             Full-Stack & AI Developer
@@ -38,8 +39,8 @@ export function AboutSection() {
               </a>
             </Button>
           </div>
-        </div>
-        <div className="mx-auto">
+        </FadeIn>
+        <FadeIn delay={0.2} direction="right" className="mx-auto">
           <Image
             src="/avatar.png"
             alt="Avatar"
@@ -48,7 +49,7 @@ export function AboutSection() {
             unoptimized
             className="rounded-full object-cover aspect-square shadow-lg"
           />
-        </div>
+        </FadeIn>
       </div>
     </section>
   );
