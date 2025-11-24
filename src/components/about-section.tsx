@@ -1,11 +1,18 @@
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from './ui/button';
 import { FileText } from 'lucide-react';
 import { FadeIn } from './fade-in';
 
-import { ParticlesBackground } from './particles-background';
+import dynamic from 'next/dynamic';
 import { TypewriterEffect } from './typewriter-effect';
+
+const ParticlesBackground = dynamic(
+  () => import('./particles-background').then((mod) => mod.ParticlesBackground),
+  { ssr: false }
+);
 
 export function AboutSection() {
   return (
