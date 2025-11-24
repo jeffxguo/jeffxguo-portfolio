@@ -4,15 +4,20 @@ import { Button } from './ui/button';
 import { FileText } from 'lucide-react';
 import { FadeIn } from './fade-in';
 
+import { ParticlesBackground } from './particles-background';
+import { TypewriterEffect } from './typewriter-effect';
+
 export function AboutSection() {
   return (
-    <section id="about" className="container py-24 sm:py-32">
+    <section id="about" className="container py-24 sm:py-32 relative">
+      <ParticlesBackground />
       <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-3">
         <FadeIn className="lg:col-span-2">
           <p className="text-lg text-primary mb-2">Hi, I'm <span className='font-bold text-xl'>Jeffrey Guo</span></p>
-          <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
-            Full-Stack & AI Developer
-          </h1>
+          <TypewriterEffect
+            text="Full-Stack & AI Developer"
+            className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl"
+          />
           <p className="mt-6 max-w-[700px] text-muted-foreground md:text-xl">
             I'm a Full-Stack and AI Developer with a Master's of Computer Science from the University of Southern California. I have a strong background building unique AI solutions involving ML and LLMs, while
             also creating responsive, scalable, and user-friendly web applications. I'm constantly evolving and always looking for creative ways to develop and hone my skillset.
