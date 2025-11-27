@@ -19,10 +19,10 @@
       "imageHint": "dashboard interface"
     },
     {
-      "id": "project-3",
-      "description": "A screenshot of the third project",
-      "imageUrl": "https://picsum.photos/seed/proj3/600/400",
-      "imageHint": "mobile app"
+      "id": "ai-repurposer",
+      "description": "A screenshot of AI Repurposer project",
+      "imageUrl": "/img/ai-repurposer.png",
+      "imageHint": "video to blog ai repurposer"
     },
     {
       "id": "url-shortener",
@@ -48,6 +48,5 @@
       "imageUrl": "/img/av-conv.png",
       "imageHint": "av-conv"
     }
-
   ]
 }

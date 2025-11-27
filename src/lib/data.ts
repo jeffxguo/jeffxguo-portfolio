@@ -1,6 +1,7 @@
 import type { ImagePlaceholder } from './placeholder-images';
 import { Technology } from '@/components/icons';
 import { PlaceHolderImages } from './placeholder-images';
+import { googleAI } from '@genkit-ai/google-genai';
 
 
 
@@ -25,8 +26,18 @@ const findImage = (id: string): ImagePlaceholder => {
 
 export const projects: Project[] = [
   {
+    title: 'AI Video Content Repurposing Engine',
+    description: 'A full-stack tool that converts video content into polished, SEO-ready blog posts by extracting audio, transcribing, summarizing, and formatting content for easy publishing utilizing Google AI.',
+    technologies: ['Python', 'React', 'Next.js', 'Docker', 'Google Cloud Platform', 'Firebase'],
+    image: findImage('ai-repurposer'),
+    links: {
+      github: 'https://github.com/jeffxguo/Video-to-Blog-Post-Converter',
+      live: 'https://labs.jeffxguo.me/',
+    },
+  },
+  {
     title: 'Video Keyframes to Summary Neural Network',
-    description: 'A Natural Language Processing pipeline to automatically generate video summaries by extracting important keyframes, captioning them, then stitching them together',
+    description: 'A Natural Language Processing pipeline to automatically generate video summaries by extracting important keyframes, captioning them, then stitching them together.',
     technologies: ['Python', 'Pytorch'],
     image: findImage('video-keyframes'),
     links: {
@@ -69,15 +80,15 @@ export type SkillCategory = {
 export const skillsData: SkillCategory[] = [
   {
     title: "Languages",
-    skills: ["Python", "Java", "C++", "JavaScript", "TypeScript", "SQL", "HTML", "CSS"],
+    skills: ["Python", "JavaScript", "TypeScript", "Java", "C#", "C++", "SQL", "HTML", "CSS"],
   },
   {
     title: "Frameworks & Libraries",
-    skills: ["React", "Next.js", "Node.js", "Express", "Tailwind CSS", "PyTorch", "Scikit-learn", "TensorFlow", "pandas", "NumPy", "Matplotlib", "Mongoose"],
+    skills: ["React", "Next.js", "Node.js", "Express", "FastAPI", "Vite", "Tailwind CSS", "PyTorch", "Scikit-learn", "TensorFlow", "pandas", "NumPy", "Matplotlib", "Mongoose"],
   },
   {
     title: "Tools & Platforms",
-    skills: ["Git", "Docker", "AWS", "Firebase", "PostgreSQL", "MongoDB"],
+    skills: ["Git", "Docker", "AWS", "Google Cloud Platform", "Firebase", "PostgreSQL", "MongoDB", "Google AI", "OAuth2"],
   },
   {
     title: "Concepts",
