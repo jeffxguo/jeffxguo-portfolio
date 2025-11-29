@@ -14,7 +14,13 @@ const ParticlesBackground = dynamic(
   { ssr: false }
 );
 
+import { useState } from 'react';
+
+// ... imports
+
 export function AboutSection() {
+  const [isAvatarLoaded, setIsAvatarLoaded] = useState(false);
+
   return (
     <section id="about" className="container py-24 sm:py-32 relative">
       <ParticlesBackground />
@@ -52,7 +58,7 @@ export function AboutSection() {
             </Button>
           </div>
         </FadeIn>
-        <FadeIn delay={0.2} direction="right" className="mx-auto">
+        <FadeIn delay={0.2} direction="right" className="mx-auto" trigger={isAvatarLoaded}>
           <Image
             src="/avatar.png"
             alt="Avatar"
@@ -60,6 +66,7 @@ export function AboutSection() {
             height={250}
             unoptimized
             className="rounded-full object-cover aspect-square shadow-lg"
+            onLoad={() => setIsAvatarLoaded(true)}
           />
         </FadeIn>
       </div>

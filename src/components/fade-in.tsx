@@ -8,16 +8,19 @@ interface FadeInProps {
     delay?: number;
     direction?: 'up' | 'down' | 'left' | 'right';
     className?: string;
+    trigger?: boolean;
 }
 
 export function FadeIn({
     children,
     delay = 0,
     direction = 'up',
-    className
+    className,
+    trigger
 }: FadeInProps) {
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true, margin: "-100px" });
+    const shouldAnimate = (trigger ?? true) && isInView;
 
     const directionOffset = {
         up: { y: 40 },
@@ -33,7 +36,7 @@ export function FadeIn({
                 opacity: 0,
                 ...directionOffset[direction]
             }}
-            animate={isInView ? {
+            animate={shouldAnimate ? {
                 opacity: 1,
                 x: 0,
                 y: 0
