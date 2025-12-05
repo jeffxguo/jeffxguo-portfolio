@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
             userAgent: '*',
             allow: '/',
         },
-        // sitemap: 'https://jeffxguo.me/sitemap.xml', // Uncomment when sitemap is added
+        sitemap: 'https://jeffxguo.me/sitemap.xml',
     }
 }
