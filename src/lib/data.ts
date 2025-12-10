@@ -27,12 +27,12 @@ const findImage = (id: string): ImagePlaceholder => {
 export const projects: Project[] = [
   {
     title: 'AI Video Content Repurposing Engine',
-    description: 'A full-stack tool that converts video content into polished, SEO-ready blog posts by extracting audio, transcribing, summarizing, and formatting content for easy publishing utilizing Google AI.',
+    description: 'An all-in-one AI Chrome Extension that transforms YouTube videos into structured blog posts. Built with React and Google Cloud Run, it uses Gemini 1.5 Flash to analyze video content and generate SEO-ready articles in seconds.',
     technologies: ['Python', 'React', 'Next.js', 'Docker', 'Google Cloud Platform', 'Firebase'],
     image: findImage('ai-repurposer'),
     links: {
       github: 'https://github.com/jeffxguo/Video-to-Blog-Post-Converter',
-      live: 'https://labs.jeffxguo.me/',
+      live: 'https://chromewebstore.google.com/detail/youtube-to-blog-converter/ckohibcnencacjnmhnjkopokcmmomeho',
     },
   },
   {
